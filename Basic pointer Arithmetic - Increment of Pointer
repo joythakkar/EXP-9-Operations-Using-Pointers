@@ -1,0 +1,37 @@
+#24070123051
+#Joy Thakkar
+#include <iostream>
+using namespace std;
+
+int main() {
+    int X=84;
+    int *xptr;
+    xptr=&X;
+    cout<<X<<endl;
+    cout<<*xptr<<endl;
+    cout<<xptr<<endl;
+    cout<<&X<<endl;
+    xptr++;
+    cout<<"Increamented value:"<<xptr<<endl;
+    float y=69.69;
+    float *yptr;
+    yptr=&y;
+    cout<<yptr<<endl;
+    yptr++;
+    cout<<"Increamented value: "  <<yptr<<endl;
+    bool z=0;
+    bool *zptr;
+    zptr=&z;
+    cout<<zptr<<endl;
+    zptr++;
+    cout<<"Increamented value: "  <<zptr<<endl;
+    double a=20;
+    double *aptr;
+    aptr=&a;
+    cout<<aptr<<endl;
+    aptr++;
+    cout<<"Increamented value: "  <<aptr<<endl;
+    
+
+    return 0;
+}
