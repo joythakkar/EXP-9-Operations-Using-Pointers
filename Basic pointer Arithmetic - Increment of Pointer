@@ -1,37 +1,36 @@
 #24070123051
 #Joy Thakkar
+
+
+
 #include <iostream>
 using namespace std;
 
-int main() {
-    int X=84;
-    int *xptr;
-    xptr=&X;
-    cout<<X<<endl;
-    cout<<*xptr<<endl;
-    cout<<xptr<<endl;
-    cout<<&X<<endl;
-    xptr++;
-    cout<<"Increamented value:"<<xptr<<endl;
-    float y=69.69;
-    float *yptr;
-    yptr=&y;
-    cout<<yptr<<endl;
-    yptr++;
-    cout<<"Increamented value: "  <<yptr<<endl;
-    bool z=0;
-    bool *zptr;
-    zptr=&z;
-    cout<<zptr<<endl;
-    zptr++;
-    cout<<"Increamented value: "  <<zptr<<endl;
-    double a=20;
-    double *aptr;
-    aptr=&a;
-    cout<<aptr<<endl;
-    aptr++;
-    cout<<"Increamented value: "  <<aptr<<endl;
+int main(){
+    // Arithematic operations between two pointers
+    int n = 1000;
+    int *nptr;
+    nptr = &n;
     
-
+    int d = 140;
+    int *dptr;
+    dptr = &d;
+    
+    int sum = *nptr + *dptr;
+    int diff = *nptr - *dptr;
+    int prod = *nptr * *dptr;
+    int division = *nptr / *dptr;
+    cout<<"Sum :"<< sum <<endl;
+    cout<<"Difference :"<< diff <<endl;
+    cout<<"Multiplication :"<< prod <<endl;
+    cout<<"Division :"<< division <<endl;
     return 0;
 }
+
+/*
+Sample Output: 
+Sum :1140
+Difference :860
+Multiplication :140000
+Division :7
+*/
