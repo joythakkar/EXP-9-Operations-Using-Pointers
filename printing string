@@ -1,0 +1,24 @@
+// joy thakkar
+// 24070123051
+
+#include <iostream>
+using namespace std;
+
+int main(){
+    //Traversing Array in Reverse using Pointer
+    char string_1[] = {'r','e','a','d','m','e','f','i','l','e','\0'};
+    
+    char *p = &string_1[0];
+    
+    while(*p != '\0'){
+        cout<< *p;
+        p++;
+    }
+    
+    return 0;
+}
+
+
+/*Sample Output:
+readmefile
+*/
