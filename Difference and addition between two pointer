@@ -1,27 +1,85 @@
 #24070123051
 #Joy Thakkar
+
+
 #include <iostream>
 using namespace std;
 
-int main() {
-    int a=50;
-    int b=100;
-    int*p1=&a;
-    int*p2=&b;
+int main(){
+    int n = 140;
+    int *nptr;
+    nptr = &n;
+    cout<<"INT COLUMN"<<endl;
+    cout<<"Value of pointer: "<<nptr<<endl;
+    cout<<"Dereferencing: "<< *nptr <<endl;
+    cout<<"Address of n: "<< &n <<endl;
+    nptr++;
+    cout<<"Incrementing pointer: "<< nptr <<endl;
+    cout<<"Dereferencing: "<< *nptr <<endl<<endl;
     
-    int sum=*p1+*p2;
-    cout<<"Value of a:"<<*p1<<endl;
-    cout<<"Value of b:"<<*p2<<endl;
-    cout<<"Sum:"<<sum<<endl;
+    float f = 14;
+    float *fptr;
+    fptr = &f;
+    cout<<"FLOAT COLUMN"<<endl;
+    cout<<"Value of pointer: "<<fptr<<endl;
+    cout<<"Dereferencing: "<< *fptr <<endl;
+    cout<<"Address of f: "<< &f <<endl;
+    fptr++;
+    cout<<"Incrementing pointer: "<< fptr <<endl;
+    cout<<"Dereferencing: "<< *fptr <<endl<<endl;
     
-    int diffrence=*p1-*p2;
-    cout<<"Value of a:"<<*p1<<endl;
-    cout<<"Value of b:"<<*p2<<endl;
-    cout<<"diffrence:"<<diffrence<<endl;
+    double d = 40;
+    double *dptr;
+    dptr = &d;
+    cout<<"DOUBLE COLUMN"<<endl;
+    cout<<"Value of pointer: "<<dptr<<endl;
+    cout<<"Dereferencing: "<< *dptr <<endl;
+    cout<<"Address of d: "<< &d <<endl;
+    dptr++;
+    cout<<"Incrementing pointer: "<< dptr <<endl;
+    cout<<"Dereferencing: "<< *dptr <<endl<<endl;
     
-  
-    
-  
-
+    bool b = 10;
+    bool *bptr;
+    bptr = &b;
+    cout<<"BOOL COLUMN"<<endl;
+    cout<<"Value of pointer: "<<bptr<<endl;
+    cout<<"Dereferencing: "<< *bptr <<endl;
+    cout<<"Address of b: "<< &b <<endl;
+    bptr++;
+    cout<<"Incrementing pointer: "<< bptr <<endl;
+    cout<<"Dereferencing: "<< *bptr <<endl;
     return 0;
 }
+
+
+/*
+Sample Output:
+INT COLUMN
+Value of pointer: 0x7ffeecce914c
+Dereferencing: 140
+Address of n: 0x7ffeecce914c
+Incrementing pointer: 0x7ffeecce9150
+Dereferencing: 1
+
+FLOAT COLUMN
+Value of pointer: 0x7ffeecce9148
+Dereferencing: 14
+Address of f: 0x7ffeecce9148
+Incrementing pointer: 0x7ffeecce914c
+Dereferencing: 1.96182e-43
+
+DOUBLE COLUMN
+Value of pointer: 0x7ffeecce9140
+Dereferencing: 40
+Address of d: 0x7ffeecce9140
+Incrementing pointer: 0x7ffeecce9148
+Dereferencing: 2.97621e-312
+
+BOOL COLUMN
+Value of pointer: 0x7ffeecce913f
+Dereferencing: 1
+Address of b: 0x7ffeecce913f
+Incrementing pointer: 0x7ffeecce9140
+Dereferencing: 0
+*/
